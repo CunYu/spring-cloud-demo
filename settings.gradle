@@ -1,0 +1,2 @@
+include "rest-template-provider"
+include "rest-template-consumer"

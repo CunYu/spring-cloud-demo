@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile("org.springframework.boot:spring-boot-starter-parent:2.0.6.RELEASE")
+        compile("org.springframework.boot:spring-boot-starter-web:2.0.6.RELEASE")
+        compile("org.springframework.cloud:spring-cloud-dependencies:Finchley.SR2")
+        
+        compile("org.projectlombok:lombok:1.18.8")
+    }
+}
