@@ -1,2 +1,4 @@
 include "rest-template-provider"
 include "rest-template-consumer"
+include "eureka-server"
+include "eureka-client"
