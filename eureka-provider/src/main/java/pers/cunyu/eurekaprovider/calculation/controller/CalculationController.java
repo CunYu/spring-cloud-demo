@@ -1,10 +1,10 @@
-package pers.cunyu.resttemplateprovider.calculation.controller;
+package pers.cunyu.eurekaprovider.calculation.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pers.cunyu.resttemplateprovider.calculation.domain.CalculationResult;
+import pers.cunyu.eurekaprovider.calculation.domain.CalculationResult;
 
 import java.math.BigDecimal;
 

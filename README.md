@@ -2,14 +2,33 @@
 
 Spring Cloud Demo
 
-### 说明
+### RestTemplateDemo
+
+Spring Cloud使用RestTemplate调用示例。
 
 |类名|说明|
-|:-|:-|
-|rest-template-provider|Spring Cloud RestTemplate Provider|
-|rest-template-consumer|Spring Cloud RestTemplate Consumer|
-|eureka-server|Spring Cloud Erueka Server|
-|eureka-client|Spring Cloud Erueka Client|
+|:----|:----|
+|rest-template-provider|服务提供者|
+|rest-template-consumer|服务消费者|
+
+### EurekaDemo
+
+Eureka服务端的搭建与Eureka客户端注册的示例。
+
+|类名|说明|
+|:----|:----|
+|eureka-server|Eureka Server|
+|eureka-client|Eureka Client|
+
+### EurekaRibbonDemo
+
+Spring Cloud Eureka与Ribbon整合使用示例。
+
+|类名|说明|
+|:----|:----|
+|eureka-server|Eureka Server|
+|eureka-provider|注册在Eureka Server的服务提供者|
+|eureka-ribbon-consumer|注册在Eureka Server的整合Ribbon的服务消费者|
 
 ### 开源协议
 

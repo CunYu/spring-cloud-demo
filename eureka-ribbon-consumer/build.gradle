@@ -1,0 +1,5 @@
+dependencies {
+    compile("org.projectlombok:lombok")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-ribbon")
+}

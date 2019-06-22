@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eurekaRibbonConsumer
+server:
+  port: 8089
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://root:root@localhost:8082/eureka/,http://root:root@localhost:8083/eureka/,http://root:root@localhost:8084/eureka/
+ribbon:
+  eager-load:
+    enabled: true
+    clients: eurekaProvider

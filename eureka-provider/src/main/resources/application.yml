@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: eurekaProvider
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://root:root@localhost:8082/eureka/,http://root:root@localhost:8083/eureka/,http://root:root@localhost:8084/eureka/
+---
+spring:
+  profiles: eurekaProviderOne
+server:
+  port: 8086
+---
+spring:
+  profiles: eurekaProviderTwo
+server:
+  port: 8087
+---
+spring:
+  profiles: eurekaProviderThree
+server:
+  port: 8088
