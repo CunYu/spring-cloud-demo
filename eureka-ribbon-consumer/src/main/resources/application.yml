@@ -10,6 +10,7 @@ eureka:
     service-url:
       defaultZone: http://root:root@localhost:8082/eureka/,http://root:root@localhost:8083/eureka/,http://root:root@localhost:8084/eureka/
 ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
   eager-load:
     enabled: true
     clients: eurekaProvider
