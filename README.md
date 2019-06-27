@@ -30,6 +30,16 @@ Spring Cloud Eureka与Ribbon整合使用示例。
 |eureka-provider|注册在Eureka Server的服务提供者|
 |eureka-ribbon-consumer|注册在Eureka Server的整合Ribbon的服务消费者|
 
+### EurekaRibbonFeignDemo
+
+Spring Cloud Eureka，Ribbon，Feign整合使用示例。
+
+|类名|说明|
+|:----|:----|
+|eureka-server|Eureka Server|
+|eureka-provider|注册在Eureka Server的服务提供者|
+|eureka-ribbon-feign-consumer|注册在Eureka Server的整合Ribbon，Feign的服务消费者|
+
 ### 开源协议
 
 [MIT](./LICENSE)
