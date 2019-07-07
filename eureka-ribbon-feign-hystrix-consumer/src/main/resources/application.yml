@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: eurekaRibbonFeginConsumer
+server:
+  port: 8091
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://root:root@localhost:8082/eureka/,http://root:root@localhost:8083/eureka/,http://root:root@localhost:8084/eureka/
+ribbon:
+  eager-load:
+    enabled: true
+    clients: eurekaProvider
+feign:
+  client:
+    config:
+      default:
+        # 建立连接超时时间
+        connectTimeout: 5000
+        # 等待目标服务器响应时间
+        readTimeout: 5000
+  hystrix:
+    enabled: true

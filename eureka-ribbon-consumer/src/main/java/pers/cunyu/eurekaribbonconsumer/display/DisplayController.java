@@ -1,6 +1,5 @@
 package pers.cunyu.eurekaribbonconsumer.display;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -13,7 +12,6 @@ import pers.cunyu.eurekaribbonconsumer.domain.CalculationResult;
 
 import java.math.BigDecimal;
 
-@Slf4j
 @RestController
 @RequestMapping("display")
 public class DisplayController {
